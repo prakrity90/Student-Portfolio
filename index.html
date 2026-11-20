@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Prakriti Patel, Computer Science student and prompt engineering enthusiast." />
+  <meta name="theme-color" content="#070b14" />
+  <title>Prakriti Patel | CS Student &amp; Prompt Engineer</title>
+
+  <!-- Marks the page as JS-enabled so reveal animations never hide content when JS is off -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Internal critical CSS: dark theme, system fonts, borders and 1100px width work even offline -->
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #070b14;
+      --bg-soft: #0b1220;
+      --surface: #111a2e;
+      --surface-2: #162038;
+      --text: #e8edf7;
+      --muted: #9aa7bf;
+      --border: #26324d;
+      --primary: #8b5cf6;
+      --primary-2: #6366f1;
+      --accent: #22d3ee;
+      --pink: #f472b6;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; }
+  </style>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Prakriti Patel, home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-name">Prakriti<span class="brand-light"> Patel</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#skills" class="nav-link">Skills &amp; Method</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="glow glow-1" aria-hidden="true"></div>
+      <div class="glow glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="pill">Open to internships &amp; collaborations</span>
+          <h1>Hi, I'm <span class="gradient-text">Prakriti Patel</span></h1>
+          <p class="typed-line">
+            I build <span class="typed" id="typed" aria-live="off">clean websites</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-sub">
+            A Computer Science student who designs responsive web interfaces and writes
+            precise prompts that get reliable, useful answers from AI models.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+
+          <ul class="stats">
+            <li><strong class="count" data-count="10" data-suffix="+">0</strong><span>Projects built</span></li>
+            <li><strong class="count" data-count="50" data-suffix="+">0</strong><span>Prompts tested</span></li>
+            <li><strong class="count" data-count="3" data-suffix="">0</strong><span>Core languages</span></li>
+          </ul>
+        </div>
+
+        <aside class="terminal card" aria-label="Example of a structured prompt">
+          <div class="terminal-bar">
+            <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+            <span class="terminal-title">prompt.txt</span>
+          </div>
+          <pre class="terminal-body"><span class="k">Role:</span>        Senior web developer
+<span class="k">Context:</span>     CS student portfolio
+<span class="k">Task:</span>        Build a responsive page
+<span class="k">Format:</span>      HTML, CSS, JS files
+<span class="k">Constraints:</span> No frameworks
+
+<span class="ok">&#10003; Clear prompt = better output</span></pre>
+          <div class="chip chip-a">HTML</div>
+          <div class="chip chip-b">CSS</div>
+          <div class="chip chip-c">JS</div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS & PROMPT ENGINEERING METHOD ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What I Do</span>
+          <h2>Skills &amp; Prompt Engineering Method</h2>
+          <p>Technical skills on one side, and the repeatable framework I use to write better prompts on the other.</p>
+        </div>
+
+        <div class="skills-layout">
+          <div class="card skills-card reveal">
+            <h3>Technical Skills</h3>
+
+            <div class="skill">
+              <div class="skill-row"><span>HTML &amp; CSS</span><span>90%</span></div>
+              <div class="bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="HTML and CSS proficiency">
+                <div class="bar-fill" style="--level:90%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>JavaScript</span><span>80%</span></div>
+              <div class="bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency">
+                <div class="bar-fill" style="--level:80%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>Python</span><span>75%</span></div>
+              <div class="bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency">
+                <div class="bar-fill" style="--level:75%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>Prompt Engineering</span><span>85%</span></div>
+              <div class="bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Prompt engineering proficiency">
+                <div class="bar-fill" style="--level:85%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>Git &amp; GitHub</span><span>70%</span></div>
+              <div class="bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Git and GitHub proficiency">
+                <div class="bar-fill" style="--level:70%"></div>
+              </div>
+            </div>
+
+            <div class="tools">
+              <span>VS Code</span><span>GitHub</span><span>Vercel</span><span>ChatGPT</span><span>Claude</span>
+            </div>
+          </div>
+
+          <div class="method reveal">
+            <h3>My R.C.T.F.C. Prompt Method</h3>
+            <ol class="method-list">
+              <li class="card method-item">
+                <span class="step-no">R</span>
+                <div><h4>Role</h4><p>Tell the AI who to act as, for example "Senior Web Developer".</p></div>
+              </li>
+              <li class="card method-item">
+                <span class="step-no">C</span>
+                <div><h4>Context</h4><p>Explain the situation, audience and goal so answers fit the real need.</p></div>
+              </li>
+              <li class="card method-item">
+                <span class="step-no">T</span>
+                <div><h4>Task</h4><p>State one clear, specific action. Avoid vague requests.</p></div>
+              </li>
+              <li class="card method-item">
+                <span class="step-no">F</span>
+                <div><h4>Format</h4><p>Define the output shape: code blocks, table, bullet list, word count.</p></div>
+              </li>
+              <li class="card method-item">
+                <span class="step-no">C</span>
+                <div><h4>Constraints</h4><p>Set the rules: tools allowed, limits, tone, and what to avoid.</p></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">My Work</span>
+          <h2>Projects</h2>
+          <p>Filter by category to explore what I've built.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-btn" data-filter="prompt" aria-pressed="false">Prompt Engineering</button>
+          <button class="filter-btn" data-filter="python" aria-pressed="false">Python</button>
+        </div>
+
+        <p class="result-count" id="resultCount" aria-live="polite">Showing 6 of 6 projects</p>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="card project-card" data-category="web">
+            <div class="thumb t1"><span>&lt;/&gt;</span></div>
+            <div class="project-body">
+              <span class="tag">Web</span>
+              <h3>Personal Portfolio Site</h3>
+              <p>Responsive dark-mode portfolio built with plain HTML, CSS and JavaScript.</p>
+              <div class="stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-category="prompt">
+            <div class="thumb t2"><span>&#10024;</span></div>
+            <div class="project-body">
+              <span class="tag">Prompt Engineering</span>
+              <h3>Prompt Pattern Library</h3>
+              <p>A tested collection of reusable prompt templates for coding, writing and research.</p>
+              <div class="stack"><span>R.C.T.F.C.</span><span>Templates</span></div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-category="python">
+            <div class="thumb t3"><span>&#128013;</span></div>
+            <div class="project-body">
+              <span class="tag">Python</span>
+              <h3>Student Grade Analyzer</h3>
+              <p>Command-line tool that reads CSV marks and reports averages, ranks and trends.</p>
+              <div class="stack"><span>Python</span><span>CSV</span></div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-category="web">
+            <div class="thumb t4"><span>&#9745;</span></div>
+            <div class="project-body">
+              <span class="tag">Web</span>
+              <h3>To-Do List App</h3>
+              <p>Task manager with add, complete and delete actions, saved in the browser.</p>
+              <div class="stack"><span>JavaScript</span><span>localStorage</span></div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-category="prompt">
+            <div class="thumb t5"><span>&#128172;</span></div>
+            <div class="project-body">
+              <span class="tag">Prompt Engineering</span>
+              <h3>Prompt A/B Comparison Study</h3>
+              <p>Compared vague vs. structured prompts and scored the quality of each response.</p>
+              <div class="stack"><span>Testing</span><span>Analysis</span></div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-category="python">
+            <div class="thumb t6"><span>&#128202;</span></div>
+            <div class="project-body">
+              <span class="tag">Python</span>
+              <h3>Expense Tracker</h3>
+              <p>Logs daily spending and draws simple category summaries from the data.</p>
+              <div class="stack"><span>Python</span><span>Data</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / REGISTRATION ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Say Hello</span>
+          <h2>Contact &amp; Registration</h2>
+          <p>Send me a message or register your interest in collaborating.</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="card contact-info reveal">
+            <h3>Let's build something</h3>
+            <p>Have a project idea, a study group, or an internship opportunity? Fill in the form and I'll get back to you.</p>
+            <ul>
+              <li><strong>Name</strong><span>Prakriti Patel</span></li>
+              <li><strong>Field</strong><span>Computer Science</span></li>
+              <li><strong>Focus</strong><span>Web Development &amp; Prompt Engineering</span></li>
+            </ul>
+            <div class="socials">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+
+          <form class="card contact-form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" />
+              <small class="error" id="nameError" role="alert"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <small class="error" id="emailError" role="alert"></small>
+            </div>
+
+            <div class="field">
+              <label for="interest">I'm interested in</label>
+              <select id="interest" name="interest">
+                <option value="">Select an option</option>
+                <option value="collab">Project collaboration</option>
+                <option value="internship">Internship / job</option>
+                <option value="study">Study group</option>
+                <option value="other">Something else</option>
+              </select>
+              <small class="error" id="interestError" role="alert"></small>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Write at least 10 characters..."></textarea>
+              <div class="field-foot">
+                <small class="error" id="messageError" role="alert"></small>
+                <small class="counter" id="charCount">0 / 500</small>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <div class="status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year">2026</span> Prakriti Patel. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#home">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
